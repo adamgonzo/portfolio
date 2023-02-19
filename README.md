@@ -1,3 +1,27 @@
+Welcome to my portfolio website repository! In this repository, you'll find the code for my portfolio website, which showcases some of my best projects and skills as a software engineer.
+
+How to View the Website
+To view the website, simply click on the link to the deployed website in the repository description or navigate to the website using your preferred browser.
+
+How to Use the Repository
+If you'd like to use this repository to build your own portfolio website, feel free to fork the repository and modify it to your liking.
+
+Technologies Used
+The website is built using the following technologies:
+
+HTML
+Tailwindcss
+JavaScript
+typescript
+next.Js
+React
+
+Installation Instructions
+Clone the repository to your local machine using Git
+Open the repository in your preferred code editor
+Modify the code as desired
+Save your changes and push them to your forked repository
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -36,3 +60,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+[Adam Gonzalez]'s Portfolio Website
+
+Thank you for visiting my portfolio website repository. If you have any questions or comments, please feel free to contact me using the information provided above.
