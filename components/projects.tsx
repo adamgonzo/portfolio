@@ -33,9 +33,6 @@ export default function Projects() {
 
   return (
     <div className="font-sans">
-      <h1 className="text-4xl font-bold mb-5 text-center border-b border-gray-400 dark:shadow-md mx-auto">
-        GitHub Projects
-      </h1>
       <div className="flex justify-center mx-auto w-full max-w-sm md:max-w-800">
         <input
           type="text"
@@ -50,7 +47,7 @@ export default function Projects() {
           </button>
         )}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-3.5 my-4 mx-auto justify-center items-center text-center self-center -ml-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 p-3.5 my-4 mx-auto justify-center items-center text-center self-center -ml-8">
         {filteredProjects.map((project, index) => (
           <div
             className="border-4 border-gray-300 w-full h-full px-5 py-5 m-4 transition ease-in-out duration-200 rounded-lg dark:hover:bg-gray-500 hover:bg-neutral-100 cursor-pointer transform scale-100 shadow-lg hover:shadow-xl"
