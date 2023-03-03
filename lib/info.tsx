@@ -1,11 +1,11 @@
-import me from "./avatarMe.jpg"
+import me from './avatarMe.jpg'
 
-export const name = "Adam Gonzalez"
+export const name = 'Adam Gonzalez'
 export const avatar = me
 export const about = () => {
   return (
     <>
-      Hey, my name is Adam, and I&apos;m a junior freelance web developer.
+      Hey, my name is Adam, and I&apos;m a junior full-stack web developer.
       I&apos;m passionate about taking ideas and turning them into stunning
       websites that are both easy to use and visually appealing. To me, web
       design is all about creating an experience that engages and delights
