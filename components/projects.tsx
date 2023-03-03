@@ -1,35 +1,35 @@
-"use client";
+'use client'
 
-import React, { useState, useEffect, useRef } from "react";
-import { DeleteLeft, GitHubIcon } from "./icons";
+import React, { useState, useEffect } from 'react'
+import { DeleteLeft, GitHubIcon } from './icons'
 
 export default function Projects() {
-  const [projects, setProjects] = useState<any[]>([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredProjects, setFilteredProjects] = useState<any[]>([]);
+  const [projects, setProjects] = useState<any[]>([])
+  const [searchTerm, setSearchTerm] = useState('')
+  const [filteredProjects, setFilteredProjects] = useState<any[]>([])
 
   useEffect(() => {
-    fetch("https://api.github.com/users/adamgonzo/repos")
-      .then((response) => response.json())
-      .then((data) => setProjects(data));
-  }, []);
+    fetch('https://api.github.com/users/adamgonzo/repos')
+      .then(response => response.json())
+      .then(data => setProjects(data))
+  }, [])
 
   useEffect(() => {
-    const filteredProjects = projects.filter((project) =>
+    const filteredProjects = projects.filter(project =>
       project.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredProjects(filteredProjects);
-  }, [searchTerm, projects]);
+    )
+    setFilteredProjects(filteredProjects)
+  }, [searchTerm, projects])
 
   const handleSearch = (event: {
-    target: { value: React.SetStateAction<string> };
+    target: { value: React.SetStateAction<string> }
   }) => {
-    setSearchTerm(event.target.value);
-  };
+    setSearchTerm(event.target.value)
+  }
 
   const clearSearch = () => {
-    setSearchTerm("");
-  };
+    setSearchTerm('')
+  }
 
   return (
     <div className="font-sans">
@@ -44,7 +44,7 @@ export default function Projects() {
           value={searchTerm}
           onChange={handleSearch}
         />
-        {searchTerm !== "" && (
+        {searchTerm !== '' && (
           <button className="text-lg p-2 rounded-r-md" onClick={clearSearch}>
             <DeleteLeft />
           </button>
@@ -68,5 +68,5 @@ export default function Projects() {
         ))}
       </div>
     </div>
-  );
+  )
 }
