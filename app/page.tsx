@@ -1,15 +1,7 @@
-import {
-  ArrowIcon,
-  GitHubIcon,
-  TwitterIcon,
-  ViewsIcon,
-} from "components/icons";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "./page.module.css";
-import { name, about, bio, avatar } from "lib/info";
-const inter = Inter({ subsets: ["latin"] });
-export const revalidate = 60;
+import { ArrowIcon, GitHubIcon, TwitterIcon, ViewsIcon } from "components/icons"
+import Image from "next/image"
+import styles from "./page.module.css"
+import { name, about, bio, avatar } from "lib/info"
 
 export const metadata = {
   description: "Developer, write, and creator.",
@@ -28,7 +20,7 @@ export const metadata = {
     locale: "en-Us",
     type: "website",
   },
-};
+}
 
 export default async function HomePage() {
   return (
@@ -61,7 +53,7 @@ export default async function HomePage() {
           </p>
         </div> */}
       </div>
-      <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
+      <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200 font-shantel">
         {bio()}
       </p>
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
@@ -78,5 +70,5 @@ export default async function HomePage() {
         </li>
       </ul>
     </section>
-  );
+  )
 }

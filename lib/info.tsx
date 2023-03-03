@@ -5,11 +5,12 @@ export const avatar = me
 export const about = () => {
   return (
     <>
-      Hi, I&apos;m Adam. I&apos;m a Junior Freelance Web Developer, with a
-      strong desire to bring ideas to life through website design. I strive to
-      create websites that are not only beautiful and vibrant, but also
-      user-friendly and functional. I am dedicated to delivering quality work
-      and exceeding client expectations with my skills and creativity.
+      Hey, my name is Adam, and I&apos;m a junior freelance web developer.
+      I&apos;m passionate about taking ideas and turning them into stunning
+      websites that are both easy to use and visually appealing. To me, web
+      design is all about creating an experience that engages and delights
+      users. I&apos;m constantly seeking new ways to make websites more
+      user-friendly and functional, while also ensuring that they look great.
     </>
   )
 }
@@ -17,11 +18,13 @@ export const about = () => {
 export const bio = () => {
   return (
     <>
-      I have made valuable contributions to multiple repos on github and
-      actively engage in helping others through my involvement in the
-      open-source community. With expertise in React and Next.js, I have
-      successfully delivered multiple dynamic and engaging websites that meet
-      the unique needs of each client.
+      I&apos;m also passionate about open-source development and actively
+      contribute to multiple repositories on Github. I find great fulfillment in
+      helping others and being involved in the community. My expertise lies in
+      React, python, Next.js, and I&apos;ve had the pleasure of creating several
+      dynamic and engaging websites that meet the specific needs of each
+      project. Seeing the end result of my hard work is incredibly rewarding,
+      and I&apos;m always striving to improve my skills and knowledge.
     </>
   )
 }

@@ -1,43 +1,43 @@
-"use client"
+'use client'
 
-import clsx from "clsx"
-import Image from "next/image"
-import { usePathname } from "next/navigation"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import img from "./adam.png"
+import clsx from 'clsx'
+import Image from 'next/image'
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import img from './adam.png'
 
 const navItems = {
-  "/": {
-    name: "Home",
+  '/': {
+    name: 'Home',
     x: 0,
     y: 0,
-    w: "64px",
+    w: '64px'
   },
-  "/about": {
-    name: "About",
+  '/about': {
+    name: 'About',
     x: 69,
     y: 35,
-    w: "65px",
+    w: '65px'
   },
-  "/projects": {
-    name: "Projects",
+  '/projects': {
+    name: 'Projects',
     x: 133,
     y: 70,
-    w: "85px",
+    w: '85px'
   },
-  "/contact": {
-    name: "Contact",
+  '/contact': {
+    name: 'Contact',
     x: 220,
     y: 105,
-    w: "80px",
+    w: '80px'
   },
-  "/blog": {
-    name: "Blog",
+  '/blog': {
+    name: 'Blog',
     x: 299,
     y: 139,
-    w: "56px",
-  },
+    w: '56px'
+  }
 }
 
 function Logo() {
@@ -56,7 +56,7 @@ function Logo() {
 
 export default function Navbar() {
   type NavItemsKeys = keyof typeof navItems
-  let pathname: NavItemsKeys = "/"
+  let pathname: NavItemsKeys = '/'
   const pathnameFromUsePathname = usePathname()
   if (
     pathnameFromUsePathname &&
@@ -65,11 +65,11 @@ export default function Navbar() {
     pathname = pathnameFromUsePathname as NavItemsKeys
   }
   if (pathname) {
-    if (pathname.includes("/blog")) {
-      pathname = "/blog"
+    if (pathname.includes('/blog')) {
+      pathname = '/blog'
     }
   } else {
-    pathname = "/"
+    pathname = '/'
   }
 
   return (
@@ -94,12 +94,12 @@ export default function Navbar() {
                     animate={{
                       opacity: 1,
                       y: navItems[pathname].y,
-                      width: navItems[pathname].w,
+                      width: navItems[pathname].w
                     }}
                     transition={{
-                      type: "spring",
+                      type: 'spring',
                       stiffness: 350,
-                      damping: 30,
+                      damping: 30
                     }}
                   />
                 </div>
@@ -112,12 +112,12 @@ export default function Navbar() {
                     animate={{
                       opacity: 1,
                       x: navItems[pathname].x,
-                      width: navItems[pathname].w,
+                      width: navItems[pathname].w
                     }}
                     transition={{
-                      type: "spring",
+                      type: 'spring',
                       stiffness: 350,
-                      damping: 30,
+                      damping: 30
                     }}
                   />
                 </div>
@@ -132,10 +132,10 @@ export default function Navbar() {
                   key={path}
                   href={path}
                   className={clsx(
-                    "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]",
+                    'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]',
                     {
-                      "text-neutral-500": !isActive,
-                      "font-bold": isActive,
+                      'text-neutral-500': !isActive,
+                      'font-bold': isActive
                     }
                   )}
                 >

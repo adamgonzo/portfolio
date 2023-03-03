@@ -1,17 +1,19 @@
-import "./globals.css"
-import clsx from "clsx"
-import localFont from "@next/font/local"
-import Navbar from "@/components/navbar"
+'use client'
+
+import './globals.css'
+import clsx from 'clsx'
+import localFont from '@next/font/local'
+import Navbar from '@/components/navbar'
 
 const kaisei = localFont({
-  src: "../public/fonts/kaisei-tokumin-latin-700-normal.woff2",
-  weight: "700",
-  variable: "--font-kaisei",
-  display: "swap",
+  src: '../public/fonts/kaisei-tokumin-latin-700-normal.woff2',
+  weight: '700',
+  variable: '--font-kaisei',
+  display: 'swap'
 })
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
@@ -19,7 +21,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        "text-black bg-white dark:text-white dark:bg-[#111010]",
+        'text-black bg-white dark:text-white dark:bg-[#111010]',
         kaisei.variable
       )}
     >

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+
 const DevtoPosts = () => {
   const [posts, setPosts] = useState<any[]>([]);
   useEffect(() => {
