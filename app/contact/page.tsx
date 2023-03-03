@@ -47,8 +47,9 @@ export default function ContactPage() {
       </a>
       <a
         className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
-        href="https://drive.google.com/file/d/1HWFQ94zDzzPlAPotOHfWGqhgkGA3xsBJ/edit?usp=share_link"
+        href="https://drive.google.com/file/d/1J7xjNSdQ4PgQqawjh9nyCzstYHRifF5X/edit?usp=share_link"
       >
+
         <div className="flex items-center">
           <ResumeIcon />
           <div className="ml-3">Resume </div>
