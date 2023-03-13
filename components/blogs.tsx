@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 const DevtoPosts = () => {
   const [posts, setPosts] = useState<any[]>([]);
   useEffect(() => {
-    fetch("https://dev.to/api/articles?username=megagon&per_page=20")
+    fetch("https://dev.to/api/articles?username=megagon&per_page=10")
       .then((res) => res.json())
       .then((data) => setPosts(data))
       .catch((error) => console.error(error));
