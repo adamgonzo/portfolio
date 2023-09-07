@@ -1,5 +1,4 @@
 'use client'
-//Head of function
 export default function Head() {
   return (
     <>
