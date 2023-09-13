@@ -7,8 +7,8 @@ export const avatar = me
 export const about = () => {
   return (
     <>
-      Hey, my name is Adam, and I&apos;m a junior full-stack web developer.
-      I&apos;m passionate about taking ideas and turning them into stunning
+      Hey, my name is Adam, and I graduated from CSU Chico in 2020. Currently, I&apos;m learning to be a junior full-stack web developer.
+      I had to take about 2 and a half years off to be a full-time caregiver. I&apos;m passionate about taking ideas and turning them into stunning
       websites that are both easy to use and visually appealing. To me, web
       design is all about creating an experience that engages and delights
       users. I&apos;m constantly seeking new ways to make websites more
