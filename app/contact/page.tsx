@@ -23,9 +23,9 @@ export default function ContactPage() {
       </h2>
       <p className="text-gray-600 dark:text-gray-400">
         I&apos;m accessible on various platforms, and I&apos;d be delighted to
-        hear from you. To see my resume, simply click the link. If you&apos;re
-        interested in collaborating, please feel free to reach out to me via
-        email. I look forward to connecting with you!:
+        hear from you. If you&apos;re interested in collaborating, please feel
+        free to reach out to me via email. I look forward to connecting with
+        you!
       </p>
       <div className="grid grid-cols-2 gap-4">
         <a
