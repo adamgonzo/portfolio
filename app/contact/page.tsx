@@ -5,8 +5,7 @@ import {
   DevIcon,
   EmailMe,
   GitHubIcon,
-  LinkedinIcon,
-  ResumeIcon
+  LinkedinIcon
 } from 'components/icons'
 
 export const metadata = {
