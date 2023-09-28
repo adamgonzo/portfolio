@@ -66,8 +66,8 @@ export default function Projects() {
         className="font-sans max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8"
         id="projects-info"
       >
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
-          <article className="h-max bg-white dark:bg-gray-800 overflow-hidden border border-gray-300 rounded-lg shadow-lg dark:shadow-white shadow-black">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 ">
+          <article className="bg-white dark:bg-gray-800 overflow-hidden border border-gray-300 rounded-lg shadow-lg dark:shadow-white shadow-black">
             <div className="px-4 py-5 sm:p-6">
               <h2 className="text-2xl font-bold leading-tight text-gray-900 dark:text-red-200  mb-4">
                 Portfolio Website
@@ -98,7 +98,7 @@ export default function Projects() {
             </div>
           </article>
 
-          <article className="h-max bg-white dark:bg-gray-800 overflow-hidden border border-gray-300 rounded-lg shadow-lg dark:shadow-white shadow-black">
+          <article className="bg-white dark:bg-gray-800 overflow-hidden border border-gray-300 rounded-lg shadow-lg dark:shadow-white shadow-black">
             <div className="px-4 py-5 sm:p-6">
               <h2 className="text-2xl font-bold leading-tight text-gray-900 dark:text-red-200 mb-4">
                 Recipes in the terminal
