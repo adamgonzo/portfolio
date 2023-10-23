@@ -7,6 +7,8 @@ import {
   GitHubIcon,
   LinkedinIcon
 } from 'components/icons'
+import Image from 'next/image'
+import { dark_contact, light_contact } from '@/lib/info'
 
 export const metadata = {
   name: 'Adam Gonzalez',
@@ -16,9 +18,28 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="bg-white dark:bg-gray-900 border-2 dark:border-white border-black rounded-lg shadow-lg p-6 space-y-6">
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-        Get in touch
+    <section className="bg-white dark:bg-gray-900 dark:border-white border-black rounded-lg shadow-lg p-6 space-y-6">
+      <div className="flex justify-center">
+        <Image
+          src={light_contact}
+          alt="Avatar"
+          className="rounded-full dark:hidden"
+          width={170}
+          priority
+          style={{ width: 'auto', height: 'auto' }}
+        />
+        <Image
+          src={dark_contact}
+          alt="Avatar"
+          className="rounded-full hidden dark:block"
+          width={190}
+          priority
+          style={{ width: 'auto', height: 'auto' }}
+        />
+      </div>
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-white justify-center">
+        <span className="flex justify-center">Adam Gonzalez Jr</span>
+        <span className="flex justify-center font-light">Get in touch</span>
       </h2>
       <p className="text-gray-600 dark:text-gray-400">
         I&apos;m accessible on various platforms, and I&apos;d be delighted to
@@ -26,7 +47,7 @@ export default function ContactPage() {
         free to reach out to me via email. I look forward to connecting with
         you!
       </p>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="flex flex-col gap-4">
         <a
           className="flex items-center justify-between bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg p-4 transition-colors"
           href="https://www.linkedin.com/in/adam-gonzalez-jr/"
