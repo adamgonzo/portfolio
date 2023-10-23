@@ -1,6 +1,6 @@
 import { ArrowIcon } from 'components/icons'
 import Image from 'next/image'
-import { name, about, bio, avatar } from 'lib/info'
+import { name, about, bio, dark_contact } from 'lib/info'
 
 export const metadata = {
   description: 'Developer, writer, and creator.',
@@ -32,7 +32,7 @@ export default async function HomePage() {
         <Image
           alt={name}
           className="rounded-full grayscale"
-          src={avatar}
+          src={dark_contact}
           placeholder="blur"
           width={100}
           height={100}
