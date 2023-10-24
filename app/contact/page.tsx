@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="bg-white dark:bg-gray-900 dark:border-white border-black rounded-lg shadow-lg p-6 space-y-6">
+    <section className="bg-white dark:bg-gray-900 dark:border-white border-2 border-black rounded-lg shadow-lg p-6 space-y-6 dark:shadow-white">
       <div className="flex justify-center">
         <Image
           src={light_contact}
