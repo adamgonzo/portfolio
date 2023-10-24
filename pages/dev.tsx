@@ -32,17 +32,17 @@ const DevToPosts = () => {
   }, [])
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-    >
-      <div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-extrabold dark:text-blue-300 text-gray-800 text-center">
-            Latest Articles
-          </h2>
+    <div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl font-extrabold dark:text-blue-300 text-gray-800 text-center">
+          Latest Articles
+        </h2>
 
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
           <div className="mt-8 space-y-8">
             {posts.map(post => (
               <div
@@ -98,9 +98,9 @@ const DevToPosts = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
