@@ -1,6 +1,6 @@
-import me from './avatarMe.jpg'
-import dark_me_image from './Me-dark-cloud.jpg'
-import light_me_image from './Me-cloud.jpg'
+import me from '@/public/avatarMe.jpg'
+import dark_me_image from '@/public/Me-dark-cloud.jpg'
+import light_me_image from '@/public/Me-cloud.jpg'
 
 //Info
 
@@ -11,14 +11,13 @@ export const light_contact = light_me_image
 export const about = () => {
   return (
     <>
-      Hey, my name is Adam, and I graduated from CSU Chico in 2020. Currently,
-      I&apos;m learning to be a junior full-stack web developer. I had to take
-      about 2 and a half years off to be a full-time caregiver. I&apos;m
-      passionate about taking ideas and turning them into stunning websites that
-      are both easy to use and visually appealing. To me, web design is all
-      about creating an experience that engages and delights users. I&apos;m
-      constantly seeking new ways to make websites more user-friendly and
-      functional, while also ensuring that they look great.
+      Hi, I&apos;m Adam Gonzalez, a Software Engineer based in San Francisco,
+      California. I have a strong foundation in technologies like Python, HTML,
+      Git, React, Next.Js, TypeScript, and JavaScript. I specialize in Front End
+      Development, and Back End Development. I excel at proposing and
+      implementing new features, enhancing site speed, SEO, and conversion
+      rates. Let&apos;s connect and explore how I can contribute to your next
+      project!
     </>
   )
 }
@@ -26,16 +25,12 @@ export const about = () => {
 export const bio = () => {
   return (
     <>
-      While I&apos;m still new to open-source development, I&apos;m passionate
-      about contributing to the community on platforms like GitHub. As I
-      continue honing my skills, I aim to actively participate in open-source
-      projects to help others and expand my own knowledge. I find great
-      fulfillment in helping others and being involved in the community. My
-      expertise lies in React, python, Next.js, and I&apos;ve had the pleasure
-      of creating a couple dynamic and engaging websites that meet the specific
-      needs of each project. Seeing the end result of my hard work is incredibly
-      rewarding, and I&apos;m always striving to improve my skills and
-      knowledge.
+      I&apos;m a Software Engineer with experience in crafting robust
+      applications and user-centered products. I graduated with a BS in Computer
+      Science from California State University, Chico, in May 2021. My expertise
+      includes Node.js, React Native, and HTML5. I&apos;m passionate about
+      open-source development and actively contribute on platforms like GitHub.
+      Let&apos;s collaborate and create something exceptional!
     </>
   )
 }
