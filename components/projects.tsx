@@ -3,11 +3,11 @@ import React from 'react'
 import Image from 'next/image'
 //picture imports
 import { GitHubIcon, BoxArrow, MongoDB, Github, Docker } from './icons'
-import portfolioImg from '../lib/port.png'
-import recipeGif from '../lib/recipe.gif'
-import lashes from '../lib/lashes.png'
-import BayCity from '../lib/BayCity.png'
-import rbi from '../lib/rbi.png'
+import portfolioImg from '@/public/port.png'
+import recipeGif from '@/public/recipe.gif'
+import lashes from '@/public/lashes.png'
+import BayCity from '@/public/BayCity.png'
+import rbi from '@/public/rbi.png'
 import { TypeScript, PythonLogo, ReactLogo, NextJs } from './icons'
 
 export default function Projects() {
