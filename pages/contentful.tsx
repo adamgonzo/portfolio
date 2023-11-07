@@ -1,46 +1,39 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
-import { createClient } from 'contentful'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
-const client = createClient({
-  space: process.env.NEXT_PUBLIC_SPACE_ID,
-  accessToken: process.env.NEXT_PUBLIC_ACCESS_TOKEN
-})
-
-const BlogList = () => {
-  const [blogs, setBlogs] = useState([])
+const BlogPage = () => {
+  const [blogContent, setBlogContent] = useState<any>(null)
 
   useEffect(() => {
-    const fetchBlogs = async () => {
+    const fetchBlogContent = async () => {
       try {
-        const response = await client.getEntries({
-          content_type: 'blogPost'
-        })
-        setBlogs(response.items)
+        const response = await axios.get(
+          `https://cdn.contentful.com/spaces/${process.env.NEXT_PUBLIC_SPACE_ID}/entries?access_token=${process.env.NEXT_PUBLIC_ACCESS_TOKEN}&content_type=blogPage`
+        )
+
+        setBlogContent(response.data.items)
       } catch (error) {
-        console.error('Error fetching blogs:', error)
+        console.error('Error fetching blog content:', error)
       }
     }
 
-    fetchBlogs()
+    fetchBlogContent()
   }, [])
 
   return (
     <div>
-      <h1>Blog Posts</h1>
-      <ul>
-        {blogs.map(blog => (
-          <li key={blog.sys.id}>
-            <Link to={`/blog/${blog.sys.id}`}>
-              <h2>{blog.fields.title}</h2>
-            </Link>
-          </li>
+      <h1>Blog Page</h1>
+      {blogContent &&
+        blogContent.map((blog: any) => (
+          <div key={blog.sys.id}>
+            <h2>{blog.fields.title}</h2>
+            <p>{blog.fields.content}</p>
+          </div>
         ))}
-      </ul>
     </div>
   )
 }
 
-export default BlogList
+export default BlogPage
