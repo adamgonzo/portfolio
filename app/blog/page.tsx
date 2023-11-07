@@ -1,4 +1,5 @@
 import DevToPosts from '@/pages/dev'
+import BlogList from '@/pages/contentful'
 
 export const metadata = {
   title: 'Blog',
@@ -9,7 +10,7 @@ export default function BlogsPage() {
   return (
     <section>
       <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
-        <DevToPosts />
+        <BlogList />
       </main>
     </section>
   )
