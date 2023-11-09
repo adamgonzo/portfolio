@@ -38,3 +38,5 @@ The website is built using the following technologies:
 6. Save your changes and push them to your forked repository
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### will be adding new blog tonight rather than pulling from DEVTo I will use a database to store views and likes and then display mdx files
