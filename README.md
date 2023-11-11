@@ -18,16 +18,16 @@ The website is built using the following technologies:
 
 - HTML
 - Tailwindcss
-- JavaScript 
+- JavaScript
 - TypeScript
 - Next.Js
 - React
 
-## Installation Instructions ⬇️ 
+## Installation Instructions ⬇️
 
 1. Clone the repository to your local machine using Git
 
-2. Install requirements: `npm install` 
+2. Install requirements: `npm install`
 
 3. Open the repository in your preferred code editor
 
@@ -38,5 +38,3 @@ The website is built using the following technologies:
 6. Save your changes and push them to your forked repository
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-### will be adding new blog tonight rather than pulling from DEVTo I will use a database to store views and likes and then display mdx files
