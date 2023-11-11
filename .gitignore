@@ -28,6 +28,7 @@ yarn-error.log*
 # local env files
 .env*.local
 .env.local
+.env
 
 # vercel
 .vercel
@@ -35,7 +36,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.env
 
 
 #vscode files
@@ -43,3 +43,6 @@ next-env.d.ts
 
 #intellij Idea
 /.idea
+
+# content layer
+.contentlayer
