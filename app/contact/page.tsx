@@ -1,12 +1,10 @@
-'use client'
-
 import {
   ArrowIcon,
   DevIcon,
   EmailMe,
   GitHubIcon,
   LinkedinIcon
-} from 'components/icons'
+} from '@/app/components/icons'
 import Image from 'next/image'
 import { dark_contact, light_contact } from '@/lib/info'
 
@@ -18,7 +16,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="bg-white dark:bg-gray-900 dark:border-white border-2 border-black rounded-lg shadow-lg p-6 space-y-6 dark:shadow-white">
+    <section className="bg-white dark:bg-[#667d9b] dark:border-white border-2 border-black rounded-lg shadow-lg p-6 space-y-6 dark:shadow-white">
       <div className="flex justify-center">
         <Image
           src={light_contact}
@@ -37,11 +35,11 @@ export default function ContactPage() {
           style={{ width: 'auto', height: 'auto' }}
         />
       </div>
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white justify-center">
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-900 justify-center">
         <span className="flex justify-center">Adam Gonzalez Jr</span>
         <span className="flex justify-center font-light">Get in touch</span>
       </h2>
-      <p className="text-gray-600 dark:text-gray-400">
+      <p className="text-gray-600 dark:text-black font-light">
         I&apos;m accessible on various platforms, and I&apos;d be delighted to
         hear from you. If you&apos;re interested in collaborating, please feel
         free to reach out to me via email. I look forward to connecting with

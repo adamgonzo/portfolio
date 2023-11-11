@@ -1,17 +1,51 @@
-import DevToPosts from '@/pages/dev'
-import BlogList from '@/pages/contentful'
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { allBlogs } from 'contentlayer/generated'
+import ViewCounter from './view-counter'
+import { getViewsCount } from 'lib/metrics'
+import { Suspense } from 'react'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Blog on Dev.to website'
+  description: 'Read my thoughts on software development, design, and more.'
 }
 
-export default function BlogsPage() {
+export default function BlogPage() {
   return (
     <section>
-      <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
-        <DevToPosts />
-      </main>
+      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
+        read my blog
+      </h1>
+      {allBlogs
+        .sort((a, b) => {
+          if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
+            return -1
+          }
+          return 1
+        })
+        .map(post => (
+          <Link
+            key={post.slug}
+            className="flex flex-col space-y-1 mb-4"
+            href={`/blog/${post.slug}`}
+          >
+            <div className="w-full flex flex-col">
+              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
+                {post.title}
+              </p>
+              <Suspense fallback={<p className="h-6" />}>
+                {/* @ts-expect-error Server Component */}
+                <Views slug={post.slug} />
+              </Suspense>
+            </div>
+          </Link>
+        ))}
     </section>
   )
+}
+
+async function Views({ slug }: { slug: string }) {
+  let views = await getViewsCount()
+
+  return <ViewCounter allViews={views} slug={slug} trackView={false} />
 }
