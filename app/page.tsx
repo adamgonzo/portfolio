@@ -49,12 +49,12 @@ export default async function HomePage() {
         {bio()}
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
         <div className="dark:bg-[#667d9b] rounded-2xl flex flex-col dark:shadow-white border-8 shadow-black shadow-lg  border-double border-black p-2">
           <span className="text-xl flex justify-center mb-2 mt-2 text-yellow-600 font-extrabold">
             Programming Skills
           </span>
-          <p className="text-center text-md dark:text-white text-black font-extralight mb-2">
+          <p className="text-center text-md dark:text-white text-black font-light mb-2">
             I excel in TypeScript, JavaScript, and Python, seamlessly
             integrating frontend and backend technologies. My expertise in
             React.js ensures dynamic user interfaces, while Tailwind CSS adds
@@ -65,8 +65,7 @@ export default async function HomePage() {
           <Image
             src={skillsPhoto}
             alt="Skill"
-            className="self-center "
-            style={{ width: 'auto', height: 'auto' }}
+            className="self-center mt-2 md:w-[40%] md:h-[60%] w-[auto] h-[auto]"
           />
         </div>
         <div className="dark:bg-[#667d9b] rounded-2xl flex flex-col dark:shadow-white border-8 shadow-black shadow-lg border-double border-black p-2 ">
@@ -74,7 +73,7 @@ export default async function HomePage() {
             Programming Tools
           </span>
 
-          <p className="text-center text-md dark:text-white text-black font-extralight mb-2">
+          <p className="text-center text-md dark:text-white text-black font-light mb-2">
             As a developer, I rely daily on Vim, VSCode, Git, Postman,
             Bootstrap, and PostgreSQL. These tools enable me to efficiently
             write code, collaborate with others, test APIs, build responsive
@@ -86,8 +85,7 @@ export default async function HomePage() {
             <Image
               src={toolsPhoto}
               alt="temp"
-              style={{ width: 'auto', height: 'auto' }}
-              className="self-center"
+              className="self-center mt-2 md:w-[40%] md:h-[100%] w-[auto] h-[auto]"
             />
           </div>
         </div>

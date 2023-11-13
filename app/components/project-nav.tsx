@@ -5,10 +5,10 @@ import Link from 'next/link'
 const projects = [
   { name: 'All Projects', slug: '' },
   { name: 'Portfolio', slug: 'portfolio' },
-  { name: 'Terminal Recipes', slug: 'terminal-recipes' },
-  { name: 'Lashes By Ally', slug: 'lashes-by-ally' },
-  { name: 'Bay City', slug: 'bay-city' },
-  { name: 'RBI Softball', slug: 'rbi-softball' }
+  { name: 'Terminal Recipes', slug: 'recipesFromTheTerminal' },
+  { name: 'Lashes By Ally', slug: 'LashedUpAlly' },
+  { name: 'Bay City', slug: 'BayCityGeneralGlass' },
+  { name: 'RBI Softball', slug: 'RBISoftball' }
 ]
 
 const TopNav = () => {
