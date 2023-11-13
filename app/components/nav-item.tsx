@@ -15,6 +15,8 @@ export default function NavItem({
   let pathname = usePathname() || '/'
   if (pathname.includes('/blog/')) {
     pathname = '/blog'
+  } else if (pathname.includes('/projects/')) {
+    pathname = '/projects'
   }
   const isActive = path === pathname
 
@@ -33,8 +35,8 @@ export default function NavItem({
         {name}
         {path === pathname ? (
           <motion.div
-            className="absolute h-[1px] top-7 mx-2 inset-0 bg-neutral-200 dark:bg-neutral-800 z-[-1] dark:bg-gradient-to-r from-transparent to-neutral-900"
-            layoutId="sidebar"
+            className="absolute h-[1px] top-7 mx-2 inset-0 bg-neutral-200 dark:bg-white z-[-1] dark:bg-gradient-to-r from-transparent to-neutral-900"
+            layoutId="topbar"
             transition={{
               type: 'spring',
               stiffness: 350,

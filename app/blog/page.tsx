@@ -14,7 +14,7 @@ export default function BlogPage() {
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
-        read my blog
+        Blog Posts
       </h1>
       {allBlogs
         .sort((a, b) => {

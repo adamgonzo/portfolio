@@ -6,19 +6,19 @@ import { Suspense } from 'react'
 
 const navItems = {
   '/': {
-    name: 'home'
+    name: 'Home'
   },
   '/about': {
-    name: 'about'
+    name: 'About'
   },
   '/projects': {
-    name: 'projects'
+    name: 'Projects'
   },
   '/blog': {
-    name: 'blog'
+    name: 'Blog'
   },
   '/contact': {
-    name: 'contact'
+    name: 'Contact'
   }
 }
 

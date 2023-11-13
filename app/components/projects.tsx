@@ -27,7 +27,7 @@ export default function Projects() {
       id="projects-info"
     >
       <div className="grid grid-cols-1 gap-8 ">
-        <article className="dark:bg-cyan-900 rounded-lg border-2 border-gray-300 p-4">
+        <article className="dark:bg-[#667d9b] rounded-lg border-2 border-gray-300 p-4 shadow-md dark:shadow-white shadow-black">
           <div className="flex flex-col">
             <h2 className="text-center text-2xl font-bold dark:text-yellow-600 mb-4 leading-tight">
               Portfolio Website
@@ -49,7 +49,7 @@ export default function Projects() {
                 Source Code
               </Link>
               <Link
-                href="/projects/portfolio"
+                href="/blog/Portfolio"
                 className="flex items-center text-gray-700 dark:text-emerald-200 hover:text-red-400 gap-3 hover:scale-105"
               >
                 <BoxArrow /> More Info
@@ -57,18 +57,19 @@ export default function Projects() {
             </div>
           </div>
         </article>
-        <article className="flex dark:bg-cyan-900 border-2 border-gray-300 rounded-lg p-4">
+        <article className="flex dark:bg-[#667d9b] border-2 border-gray-300 rounded-lg p-4 shadow-md shadow-black dark:shadow-white">
           <div className="flex flex-col">
             <h2 className="text-center text-2xl font-bold dark:text-yellow-600 mb-4 leading-tight">
               Recipes From The Terminal
             </h2>
             <div className="flex justify-center mb-4">
-              <Image
-                src={recipesImage}
-                alt="Portfolio screenshot"
-                className="rounded-lg"
-                style={{ width: '100%', height: 'auto' }}
-              />
+              <video controls>
+                <source
+                  src="/videos/RecipesFromTheTerminal.mp4"
+                  width={400}
+                  height={400}
+                />
+              </video>
             </div>
             <div className="flex justify-between items-center">
               <Link
@@ -78,25 +79,9 @@ export default function Projects() {
                 <GitHubIcon />
                 Source Code
               </Link>
-              <Link href="#" onClick={openModal}>
-                Video Preview
-              </Link>
 
-              {isModalOpen && (
-                <video
-                  controls
-                  autoPlay
-                  onEnded={closeModal}
-                  className="flex justify-center rounded-lg"
-                >
-                  <source
-                    src="/videos/RecipesFromTheTerminal.mp4"
-                    style={{ width: 'auto', height: 'auto' }}
-                  />
-                </video>
-              )}
               <Link
-                href="/projects/portfolio"
+                href="/blog/Portfolio"
                 className="flex items-center text-gray-700 dark:text-emerald-200 hover:text-red-400 gap-3 hover:scale-105"
               >
                 <BoxArrow />
@@ -105,7 +90,7 @@ export default function Projects() {
             </div>
           </div>
         </article>
-        <article className="flex bg-white dark:bg-cyan-900 border-2 border-gray-300 rounded-lg p-4">
+        <article className="flex bg-white dark:bg-[#667d9b] border-2 border-gray-300 rounded-lg p-4 shadow-md shadow-black dark:shadow-white">
           <div className="flex flex-col">
             <h2 className="text-2xl font-bold mb-4 text-yellow-600 text-center leading-tight">
               Bay City General Glass
@@ -127,7 +112,7 @@ export default function Projects() {
                 Source Code
               </Link>
               <Link
-                href="/projects/portfolio"
+                href="/blog/BayCity"
                 className="flex text-gray-700 dark:text-emerald-300 hover:scale-105 hover:text-red-400 gap-3"
               >
                 <BoxArrow />
