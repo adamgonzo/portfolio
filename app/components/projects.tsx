@@ -7,20 +7,8 @@ import portfolioImg from 'public/images/projects/port.png'
 import BayCity from 'public/images/projects/BayCity.png'
 import { GitHubIcon, BoxArrow } from '@/app/components/icons'
 import Link from 'next/link'
-import recipesImage from 'public/images/projects/recipesImage.png'
-import { useState } from 'react'
 
 export default function Projects() {
-  let [isModalOpen, setIsModalOpen] = useState(false)
-
-  const openModal = () => {
-    setIsModalOpen(true)
-  }
-
-  const closeModal = () => {
-    setIsModalOpen(false)
-  }
-
   return (
     <section
       className="font-sans max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8"
