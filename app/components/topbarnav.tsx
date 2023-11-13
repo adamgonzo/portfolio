@@ -24,7 +24,7 @@ const navItems = {
 
 export default function Navbar() {
   return (
-    <aside className=" mb-16 tracking-tight flex mx-auto">
+    <aside className=" mb-16 tracking-tight flex mx-auto border-2 border-black dark:border-white p-4 shadow-xl shadow-black dark:shadow-white rounded-lg ">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
           <nav
