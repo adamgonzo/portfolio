@@ -24,7 +24,7 @@
     "geist": "^1.1.0",
     "kysely": "^0.26.3",
     "kysely-planetscale": "^1.4.0",
-    "next": "14.0.1",
+    "next": "14.0.2",
     "next-contentlayer": "^0.3.4",
     "prettier": "^2.8.8",
     "react": "18.2.0",
