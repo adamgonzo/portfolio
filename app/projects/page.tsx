@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { GitHubIcon, BoxArrow } from '@/app/components/icons'
+import { port, rbi, lashes, bayCity } from 'public/images/projects'
 
 const projects = [
   {
     title: 'Portfolio Website',
-    imgSrc: '/images/projects/port.png',
+    imgSrc: port,
     githubLink: 'https://github.com/adamgonzo/portfolio',
     moreInfoLink: '/blog/Portfolio'
   },
@@ -17,19 +18,19 @@ const projects = [
   },
   {
     title: 'Bay City General Glass',
-    imgSrc: '/images/projects/BayCity.png',
+    imgSrc: bayCity,
     githubLink: 'https://github.com/adamgonzo/Bay-City-New-Site',
     moreInfoLink: '/blog/BayCity'
   },
   {
     title: 'RBI Softball',
-    imgSrc: '/images/projects/rbi.png',
+    imgSrc: rbi,
     githubLink: 'https://github.com/adamgonzo/RBI-Softball',
     moreInfoLink: '/blog/RBISoftball'
   },
   {
     title: 'LashedUpAlly',
-    imgSrc: '/images/projects/lashes.png',
+    imgSrc: lashes,
     githubLink: 'https://github.com/adamgonzo/RBI-Softball', // Note: Replace with the correct link
     moreInfoLink: '/blog/Lashes'
   }
