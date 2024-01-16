@@ -35,7 +35,7 @@ export default function NavItem({
         {name}
         {path === pathname ? (
           <motion.div
-            className="absolute h-[1px] top-7 mx-2 inset-0 bg-neutral-200 dark:bg-white z-[-1] dark:bg-gradient-to-r from-transparent to-neutral-900"
+            className="absolute h-[1px] top-7 mx-2 inset-0 bg-gray-400 dark:bg-white z-[-1] dark:bg-gradient-to-r from-transparent to-neutral-900"
             layoutId="topbar"
             transition={{
               type: 'spring',

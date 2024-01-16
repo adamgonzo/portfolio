@@ -24,14 +24,14 @@ const navItems = {
 
 export default function Navbar() {
   return (
-    <aside className=" mb-16 tracking-tight flex mx-auto border-2 border-black dark:border-white p-4 shadow-xl shadow-black dark:shadow-white rounded-lg ">
+    <aside className=" mb-16 tracking-tight flex mx-auto p-4 ">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
           <nav
             className="flex flex-row items-start relative fade md:overflow-auto scroll-pr-6 md:relative"
             id="nav"
           >
-            <div className="flex flex-row">
+            <div className="flex flex-row text-md">
               <Suspense fallback={null}>
                 {Object.entries(navItems).map(([path, { name }]) => {
                   return <NavItem key={path} path={path} name={name} />
