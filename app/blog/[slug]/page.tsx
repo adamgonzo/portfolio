@@ -1,11 +1,9 @@
-import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
 import { Mdx } from '@/app/components/mdx'
 import { allBlogs } from 'contentlayer/generated'
-import Balancer from 'react-wrap-balancer'
-import ViewCounter from '../view-counter'
-import { getViewsCount } from 'lib/metrics'
+import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 import { Suspense } from 'react'
+import Balancer from 'react-wrap-balancer'
 
 export const dynamic = 'force-static'
 
@@ -104,18 +102,8 @@ export default function Blog({ params }) {
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
           {formatDate(post.publishedAt)}
         </p>
-        <Suspense fallback={<p className="h-5" />}>
-          {/* @ts-expect-error Server Component */}
-          <Views slug={post.slug} />
-        </Suspense>
       </div>
       <Mdx code={post.body.code} />
     </section>
   )
-}
-
-async function Views({ slug }: { slug: string }) {
-  let views = await getViewsCount()
-
-  return <ViewCounter allViews={views} slug={slug} trackView />
 }
